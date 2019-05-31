@@ -16,7 +16,9 @@
     "url": "https://github.com/team-snape/apollo-aperture/issues"
   },
   "homepage": "https://github.com/team-snape/apollo-aperture#readme",
-  "dependencies": {
-    "acorn": "^6.1.1"
+  "dependencies": {},
+  "devDependencies": {
+    "acorn": "^6.1.1",
+    "acorn-jsx": "^5.0.1"
   }
 }
