@@ -1,8 +1,13 @@
 const ast = require('./ast-gen.js')
+import {parse} from 'babylon';
+import generate from 'babel-generator';
+
+
 console.log(ast.program.body[0].declarations[0].id.name);
 console.log(ast.program.body[0].declarations[0].init.type);
 
-let holderName = 'try1'
+
+
 //let holderName = ast.program.body[0].declarations[0].id.name;
 
 // const hasFunction = (ast) => {
@@ -13,12 +18,6 @@ let holderName = 'try1'
 
 // hasFunction(ast)
 
-const try1 = () =>{
-    //console.log('pass');
-}
 
-// const wrapper = (holderName) => {
-    eval(`${holderName}()`);
-// }
 
-// wrapper(holderName);
+//eval(`${holderName}()`);
