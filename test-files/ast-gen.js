@@ -1,18 +1,14 @@
-const path = require("path");
-const fs = require("fs");
-const acorn = require("acorn");
-const jsx = require("acorn-jsx");
-
+const babelParser = require('@babel/parser'),
+  fs = require('fs'),
+  path = require('path');
 
 const filePath = path.join(__dirname, '..', 'test-files', 'function.js');
 const file = fs.readFileSync(filePath, 'utf8');
 
-const ast = acorn.Parser.extend(jsx()).parse(file, { sourceType: "module" });
-//console.log(ast);
-// const writeASTfile = (cfile) =>{
-//   fs.createReadStream(cfile).pipe(fs.createWriteStream('astFunc.js'));
-// }
+const ast = babelParser.parse(file, {
+  sourceType: 'module',
+  plugins: [ 'jsx' ]
+});
 
-// writeASTfile(ast);
-
+console.log(ast);
 module.exports = ast;

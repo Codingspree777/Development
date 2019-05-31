@@ -1,18 +1,24 @@
 const ast = require('./ast-gen.js')
-//console.log(ast.body[0].declarations[0].id.name);
+console.log(ast.program.body[0].declarations[0].id.name);
+console.log(ast.program.body[0].declarations[0].init.type);
 
-const holderName = 'try1'
+let holderName = 'try1'
+//let holderName = ast.program.body[0].declarations[0].id.name;
 
-const hasFunction = (ast) => {
-    if(ast.body === 'VariableDeclaration'in ast){
-        console.log("hit");
-    }
-}
+// const hasFunction = (ast) => {
+//     if(ast.body === 'VariableDeclaration'in ast){
+//         console.log("hit");
+//     }
+// }
 
-hasFunction(ast)
+// hasFunction(ast)
 
 const try1 = () =>{
-    console.log('pass');
+    //console.log('pass');
 }
 
-console.log(`${holderName}()`)
+// const wrapper = (holderName) => {
+    eval(`${holderName}()`);
+// }
+
+// wrapper(holderName);
