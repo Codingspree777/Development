@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/team-snape/apollo-aperture#readme",
   "dependencies": {
+    "astring": "^1.4.0",
     "babel": "^6.23.0"
   },
   "devDependencies": {

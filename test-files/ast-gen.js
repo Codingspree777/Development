@@ -10,5 +10,5 @@ const ast = babelParser.parse(file, {
   plugins: [ 'jsx' ]
 });
 
-console.log(ast);
+
 module.exports = ast;

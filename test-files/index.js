@@ -1,14 +1,12 @@
 const ast = require('./ast-gen.js')
-const generate = require('babel-generator');
+const generate = require('@babel/generator');
+
+const output = generate.default(ast);
+
+// console.log(ast.program.body[0].declarations[0].id.name);
+// console.log(ast.program.body[0].declarations[0].init.type);
 
 
-console.log(ast.program.body[0].declarations[0].id.name);
-console.log(ast.program.body[0].declarations[0].init.type);
-
-const code = 'class Example {}';
-const output = generate(ast, code);
-
-console.log(output);
 //let holderName = ast.program.body[0].declarations[0].id.name;
 
 // const hasFunction = (ast) => {
@@ -20,5 +18,13 @@ console.log(output);
 // hasFunction(ast)
 
 
+let copyFunc = 'const test = () => { return 3 + 3}'
+eval(copyFunc)
+
+
+
+//console.log(wrapper);
 
 //eval(`${holderName}()`);
+
+
