@@ -17,12 +17,13 @@
   },
   "homepage": "https://github.com/team-snape/apollo-aperture#readme",
   "dependencies": {
+    "@babel/parser": "^7.4.5",
     "astring": "^1.4.0",
-    "babel": "^6.23.0"
+    "babel": "^6.23.0",
+    "graphql-tag": "^2.10.1"
   },
   "devDependencies": {
     "@babel/generator": "^7.4.4",
-    "@babel/parser": "^7.4.5",
     "@babel/traverse": "^7.4.5",
     "@babel/types": "^7.4.4",
     "acorn": "^6.1.1",

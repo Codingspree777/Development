@@ -1,3 +1,4 @@
+import gql from 'graphql-tag';
 const ADD_USER = gql`
   mutation addUser(
     $text: String!
