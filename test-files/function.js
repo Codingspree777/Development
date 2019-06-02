@@ -1,2 +1,2 @@
 
-const letMadeIt = "AddUser mutation code";
+console.log("AddUser mutation code");
