@@ -2,10 +2,12 @@ const ast = require("./ast-gen.js");
 const generate = require("@babel/generator");
 const fs = require("fs");
 
+//client's AST node being regenrate to string
 const output = generate.default(ast);
 
 const strCode = output.code;
 
+//output client strings as JS code. 
 const copyCode = fs.createWriteStream("ApolloCode.js");
 copyCode.write(`function myFunc(){${strCode}} 
     module.exports = {myFunc: myFunc}`);
