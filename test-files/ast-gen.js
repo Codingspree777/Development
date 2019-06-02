@@ -2,7 +2,7 @@ const babelParser = require('@babel/parser'),
   fs = require('fs'),
   path = require('path');
 
-const filePath = path.join(__dirname, '..', 'test-files', 'function.js');
+const filePath = path.join(__dirname, '..', 'test-files', 'client.js');
 const file = fs.readFileSync(filePath, 'utf8');
 
 const ast = babelParser.parse(file, {
