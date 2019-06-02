@@ -9,7 +9,7 @@ const strCode = output.code;
 
 const copyCode = fs.createWriteStream('ApolloCode.js')
     copyCode.write(`function myFunc(){${strCode}} 
-    module.exports = {myFunc: myFunc`);
+    module.exports = {myFunc: myFunc}`);
 
 
 // console.log(ast.program.body[0].declarations[0].id.name);
