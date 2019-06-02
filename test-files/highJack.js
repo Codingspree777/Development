@@ -1,3 +1,4 @@
-// const tst = require('./ApolloCode');
+let myFunc = require('./ApolloCode.js').myFunc;
 
-console.log('yee');
+myFunc();
+
