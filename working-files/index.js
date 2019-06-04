@@ -8,8 +8,8 @@ const output = generate.default(ast);
 const strCode = output.code;
 
 //output client strings as JS code. 
-const copyCode = fs.createWriteStream("ApolloCode.js");
-copyCode.write(`
+const writeCode = fs.createWriteStream("ApolloCode.js");
+writeCode.write(`
 import 'cross-fetch/polyfill';
 import ApolloClient from "apollo-boost/lib/index";
 import { gql } from "apollo-boost";
