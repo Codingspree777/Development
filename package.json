@@ -19,7 +19,9 @@
   "dependencies": {
     "@babel/parser": "^7.4.5",
     "babel": "^6.23.0",
-    "graphql-tag": "^2.10.1"
+    "cross-fetch": "^3.0.3",
+    "graphql-tag": "^2.10.1",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@babel/generator": "^7.4.4",
@@ -27,6 +29,8 @@
     "@babel/types": "^7.4.4",
     "acorn": "^6.1.1",
     "acorn-jsx": "^5.0.1",
-    "babel-generator": "^6.26.1"
+    "babel-cli": "^6.26.0",
+    "babel-generator": "^6.26.1",
+    "babel-preset-env": "^1.7.0"
   }
 }
