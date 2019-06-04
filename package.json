@@ -1,5 +1,5 @@
 {
-  "name": "Wrapping AST",
+  "name": "testing",
   "version": "0.1.0",
   "description": "testing wrapping for production project",
   "main": "index.js",
@@ -18,10 +18,14 @@
   "homepage": "https://github.com/team-snape/apollo-aperture#readme",
   "dependencies": {
     "@babel/parser": "^7.4.5",
+    "apollo-boost": "^0.4.1",
+    "apollo-client": "^2.6.1",
     "babel": "^6.23.0",
     "cross-fetch": "^3.0.3",
+    "fs": "0.0.1-security",
     "graphql-tag": "^2.10.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@babel/generator": "^7.4.4",
