@@ -1,4 +1,6 @@
-let client = require("./ApolloCode.js").client;
+//let client = require("./ApolloCode.js").client;
+let myFunc = require("./ApolloCode.js").myFunc;
 
-console.log(client);
-// myFunc();
+
+//client();
+//myFunc();
