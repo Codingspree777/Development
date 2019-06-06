@@ -34,8 +34,11 @@
     "@babel/node": "^7.4.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
     "@babel/traverse": "^7.4.5",
     "@babel/types": "^7.4.4",
-    "babel-generator": "^6.26.1"
+    "babel-generator": "^6.26.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.6"
   }
 }

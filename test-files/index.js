@@ -14,27 +14,21 @@ import 'cross-fetch/polyfill';
 import ApolloClient from "apollo-boost/lib/index";
 import { gql } from "apollo-boost";
 
+
 ${strCode} 
 
 
-module.exports = client`);
+
+module.exports = {myFunc: myFunc}`);
 
 // console.log(ast.program.body[0].declarations[0].id.name);
 // console.log(ast.program.body[0].declarations[0].init.type);
 
 //let holderName = ast.program.body[0].declarations[0].id.name;
 
-// const hasFunction = (ast) => {
-//     if(ast.body === 'VariableDeclaration'in ast){
-//         console.log("hit");
-//     }
-// }
 
-// hasFunction(ast)
-
-// let copyFunc = 'const test = () => { return 3 + 3}'
 // eval(copyFunc)
 
-//console.log(wrapper);
+
 
 //eval(`${holderName}()`);

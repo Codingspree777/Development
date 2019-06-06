@@ -3,10 +3,13 @@ import 'cross-fetch/polyfill';
 import ApolloClient from "apollo-boost/lib/index";
 import { gql } from "apollo-boost";
 
-function myFunc() {
+
   const client = new ApolloClient({
     uri: 'https://api.spacex.land/graphql/'
   });
+
+
+
   client.query({
     query: gql`{launchesPast(limit: 10) {
       mission_name
@@ -22,7 +25,6 @@ function myFunc() {
     }
   }`
   }).then(result => console.log(result)); 
-}
 
 
 

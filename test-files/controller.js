@@ -1,6 +1,9 @@
-//let client = require("./ApolloCode.js").client;
-let myFunc = require("./ApolloCode.js").myFunc;
+let client = require("./spacex-api.js");
+//let myFunc = require("./ApolloCode.js").myFunc;
 
 
-//client();
+console.log(client);
+
 //myFunc();
+
+
